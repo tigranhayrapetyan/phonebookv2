@@ -27,7 +27,7 @@ $user->email = $request->email;
 $user->password = Hash::make($request->password);
 $res = $user->save();
 if($res) {
-            return back()->with('success', 'You have registered successfully');
+            return back()->with('success', 'You have registered successfully. Now you can LogIn to systeam');
 } else {
             return back()->with('fail', 'Something wrong');
 }

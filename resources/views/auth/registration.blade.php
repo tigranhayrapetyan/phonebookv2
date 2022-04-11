@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
-</head>
-<body>
-  @extends('main')
+
+@extends('main')
+
+@section('content')
 <div class="container"> 
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4" style="margin-top:20px">
+  <!-- <div class="row"> -->
+    <div class="col-md-10 col-md-offset-10" style="border-radius: 15px;">
       <h4>Registration</h4>
       <hr>
       <form action="{{route('register-user')}}" method="post">
@@ -38,7 +32,7 @@
         </div>
         <hr>
         <div class="form-group">
-          <button class="btn btn-block btn-primary" type="submit">Register</button>
+          <button class="btn btn-block btn-success" type="submit">Register</button>
           <hr>
           <a href="login">Already Registered ? Log In Here</a>
       </form>
@@ -46,5 +40,5 @@
   </div>
 </div>
 
-</body>
-</html>
+
+@endsection
